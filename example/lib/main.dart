@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         whiteLabel: WhiteLabelData(
           mode: ThemeModes.dark,
           defaultLanguage: Language.en,
-          appName: "Web3Auth Flutter App",
+          appName: "CryptoCoffee",
           theme: themeMap,
         ),
         loginConfig: loginConfig,
@@ -108,7 +108,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         builder: (context) {
           return Scaffold(
             appBar: AppBar(
-              title: const Text('Web3Auth x Flutter Example'),
+              title: const Text('AAStar AirAccount Demo'),
             ),
             body: SingleChildScrollView(
               child: Center(
@@ -126,45 +126,45 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
                             height: 50,
                           ),
                           const Icon(
-                            Icons.flutter_dash,
+                            Icons.local_cafe,
                             size: 80,
-                            color: Color(0xFF1389fd),
+                            color: Color.fromARGB(255, 180, 110, 25),
                           ),
                           const SizedBox(
                             height: 40,
                           ),
                           const Text(
-                            'Web3Auth',
+                            'CryptoCoffee',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 36,
-                                color: Color(0xFF0364ff)),
+                                color: Color.fromARGB(255, 232, 177, 13)),
                           ),
                           const SizedBox(
                             height: 10,
                           ),
                           const Text(
-                            'Welcome to Web3Auth x Flutter Demo',
+                            'Welcome to CryptoCoffee x AirAccount Demo',
                             style: TextStyle(fontSize: 14),
                           ),
                           const SizedBox(
                             height: 20,
                           ),
                           const Text(
-                            'Login with',
+                            'Sign in with Email and Biometrics',
                             style: TextStyle(fontSize: 12),
                           ),
                           const SizedBox(
                             height: 20,
                           ),
-                          ElevatedButton(
-                            onPressed: _login(_withGoogle),
-                            child: const Text('Google'),
-                          ),
-                          ElevatedButton(
-                            onPressed: _login(_withFacebook),
-                            child: const Text('Facebook'),
-                          ),
+                          // ElevatedButton(
+                          //   onPressed: _login(_withGoogle),
+                          //   child: const Text('Google'),
+                          // ),
+                          // ElevatedButton(
+                          //   onPressed: _login(_withFacebook),
+                          //   child: const Text('Facebook'),
+                          // ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: TextField(
@@ -175,14 +175,18 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
                               ),
                             ),
                           ),
+                          const Text(
+                            'Or Sign up with Email and Biometrics',
+                            style: TextStyle(fontSize: 12),
+                          ),
                           ElevatedButton(
                             onPressed: _login(_withEmailPasswordless),
                             child: const Text('Email Passwordless'),
                           ),
-                          ElevatedButton(
-                            onPressed: _login(_withDiscord),
-                            child: const Text('Discord'),
-                          ),
+                          // ElevatedButton(
+                          //   onPressed: _login(_withDiscord),
+                          //   child: const Text('Discord'),
+                          // ),
                         ],
                       ),
                     ),
